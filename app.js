@@ -3,6 +3,14 @@
  * using the knowledge learned so from and taking tips from the
  * memory card game from youtube
  *
+ * 8/31
+ * you might want to use
+ * somethingInApp = innerHTML = "Your text" or in this case, name ID, I think
+ *
+ * 9/1
+ *Turn all the names into buttoms and then use classList.add to add a separate class,
+ because you need bottoms to click
+ *
  */
 //everything in inside this code below
 document.addEventListener('DOMContentLoaded', () => {
@@ -99,6 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
       //and you are appending a card img
       grid.appendChild(card)
       console.log(teamArray)
+      //this prints the last item on the array
+    //   console.log(teamArray[i])
     }
   }
 
