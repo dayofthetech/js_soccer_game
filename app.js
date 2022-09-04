@@ -14,77 +14,77 @@
  */
 //everything in inside this code below
 document.addEventListener('DOMContentLoaded', () => {
-    //creating the teams array
-    const teamArray = [
-        {
-            name: 'Arsenal',
-            //you will add an img later
-        },
-        {
-            name: 'Manchester City',
-        },
-        {
-            name: 'Tottenham'
-        },
-        {
-            name: 'Brighton'
-        },
-        {
-            name: 'Leeds'
-        },
-        {
-            name: 'Chelsea'
-        },
-        {
-            name: 'Newcastle'
-        },
-        {
-            name: 'Manchester United'
-        },
-        {
-            name: 'Liverpool'
-        },
-        {
-            name: 'Brentford'
-        },
-        {
-            name: 'Fulham'
-        },
-        {
-            name: 'Crystal Palace'
-        },
-        {
-            name: 'Southhampton'
-        },
-        {
-            name: 'Nottingham'
-        },
-        {
-            name: 'Aston Villa'
-        },
-        {
-            name: 'West Ham'
-        },
-        {
-            name: 'Everton'
-        },
-        {
-            name: 'Wolfes'
-        },
-        {
-            name: 'Leicester'
-        }
-    ]
+  //creating the teams array
+  const teamArray = [
+    {
+      name: 'Arsenal',
+      //you will add an img later
+    },
+    {
+      name: 'Manchester City',
+    },
+    {
+      name: 'Tottenham'
+    },
+    {
+      name: 'Brighton'
+    },
+    {
+      name: 'Leeds'
+    },
+    {
+      name: 'Chelsea'
+    },
+    {
+      name: 'Newcastle'
+    },
+    {
+      name: 'Manchester United'
+    },
+    {
+      name: 'Liverpool'
+    },
+    {
+      name: 'Brentford'
+    },
+    {
+      name: 'Fulham'
+    },
+    {
+      name: 'Crystal Palace'
+    },
+    {
+      name: 'Southhampton'
+    },
+    {
+      name: 'Nottingham'
+    },
+    {
+      name: 'Aston Villa'
+    },
+    {
+      name: 'West Ham'
+    },
+    {
+      name: 'Everton'
+    },
+    {
+      name: 'Wolfes'
+    },
+    {
+      name: 'Leicester'
+    }
+  ]
 
- //this is a short cut to sorting an array randomdly
+  //this is a short cut to sorting an array randomdly
   teamArray.sort(() => 0.5 - Math.random())
 
- //you are grabbing the div from index.html through its ID
- const grid = document.querySelector('.grid')
+  //you are grabbing the div from index.html through its ID
+  const grid = document.querySelector('.grid')
 
 
-   //create your board
-   function createBoard() {
+  //create your board
+  function createBoard() {
     /**8/29/2022
      * So far from this function I got a new array of random teams
      * the next step is to add two teams togueter
@@ -96,21 +96,23 @@ document.addEventListener('DOMContentLoaded', () => {
       const card = document.createElement('name')
 
       //once the card img is created, you will get the src and assiant a blank
-    //   card.setAttribute('src', 'images/blank.png')
+      //   card.setAttribute('src', 'images/blank.png')
       //this is to keep track of each card, by adding an ID you are adding a number
       card.setAttribute('data-id', i)
       //you are adding an event listener click to each individual card
       //so you click the card, the flipCard function will be called
       //this is a function within a function
-    //   card.addEventListener('click', flipCard)
+      //   card.addEventListener('click', flipCard)
       //you are grabing the grid, which is a div
       //and you are appending a card img
       grid.appendChild(card)
       console.log(teamArray)
       //this prints the last item on the array
-    //   console.log(teamArray[i])
+      //   console.log(teamArray[i])
     }
   }
 
-createBoard()
+  createBoard()
 })
+
+//changes made in replit from the browser. Will it show on github??
